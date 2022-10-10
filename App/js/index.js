@@ -40,7 +40,7 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button8")
                 .setLeft("17.523809523809526em")
-                .setTop("9.142857142857142em")
+                .setTop("8.142857142857142em")
                 .setCaption("ON")
                 .setCustomStyle({
                     "KEY" : {
@@ -59,6 +59,61 @@ xui.Class('App', 'xui.Module',{
                     "KEY" : {
                         "color" : "#FF4500"
                     }
+                })
+            );
+            
+            append(
+                xui.create("xui.UI.FusionChartsXT")
+                .setHost(host,"xui_ui_fusionchartsxt1")
+                .setLeft("34.285714285714285em")
+                .setTop("8.380952380952381em")
+                .setWidth("4.876190476190477em")
+                .setHeight("2.895238095238095em")
+                .setChartType("HLED")
+                .setJSONData({
+                    "chart" : {
+                        "manageresize" : "1",
+                        "chartbottommargin" : "5",
+                        "lowerlimit" : "0",
+                        "upperlimit" : "100",
+                        "lowerlimitdisplay" : "Low",
+                        "upperlimitdisplay" : "High",
+                        "numbersuffix" : "%",
+                        "showtickmarks" : "1",
+                        "tickvaluedistance" : "0",
+                        "majortmnumber" : "5",
+                        "majortmheight" : "4",
+                        "minortmnumber" : "0",
+                        "showtickvalues" : "1",
+                        "decimals" : "0",
+                        "ledgap" : "1",
+                        "ledsize" : "1",
+                        "ledboxbgcolor" : "333333",
+                        "ledbordercolor" : "666666",
+                        "borderthickness" : "2",
+                        "chartrightmargin" : "20",
+                        "showborder" : "0"
+                    },
+                    "colorrange" : {
+                        "color" : [
+                            {
+                                "minvalue" : "0",
+                                "maxvalue" : "30",
+                                "code" : "FF0000"
+                            },
+                            {
+                                "minvalue" : "30",
+                                "maxvalue" : "50",
+                                "code" : "FFFF00"
+                            },
+                            {
+                                "minvalue" : "50",
+                                "maxvalue" : "100",
+                                "code" : "00FF00"
+                            }
+                        ]
+                    },
+                    "value" : "70"
                 })
             );
             
