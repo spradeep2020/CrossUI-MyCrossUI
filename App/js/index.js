@@ -65,10 +65,10 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.FusionChartsXT")
                 .setHost(host,"xui_ui_fusionchartsxt1")
-                .setLeft("34.285714285714285em")
-                .setTop("8.380952380952381em")
-                .setWidth("4.876190476190477em")
-                .setHeight("2.895238095238095em")
+                .setLeft("16em")
+                .setTop("12.952380952380953em")
+                .setWidth("6.4em")
+                .setHeight("2.1333333333333333em")
                 .setChartType("HLED")
                 .setJSONData({
                     "chart" : {
@@ -115,6 +115,15 @@ xui.Class('App', 'xui.Module',{
                     },
                     "value" : "70"
                 })
+            );
+            
+            append(
+                xui.create("xui.UI.SVGPaper")
+                .setHost(host,"xui_ui_svgpaper1")
+                .setLeft("0em")
+                .setTop("0em")
+                .setWidth("51.04761904761905em")
+                .setHeight("44.03809523809524em")
             );
             
             return children;
